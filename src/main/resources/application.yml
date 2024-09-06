@@ -1,0 +1,24 @@
+server:
+  port: 8088
+
+logging:
+  level:
+    org.springframework: DEBUG
+
+# 다국어 파일 이름이 messages
+spring:
+#  jpa:
+#    show-sql: true
+  messages:
+    basename: messages
+#  security:
+#    user:
+#      name: username
+#      password: password
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
